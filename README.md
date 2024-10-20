@@ -1,4 +1,4 @@
-Metrocar-funnel-analysis
+Metrocar-funnel-analysis:
 This project aims to analyze the customer funnel of Metrocar, a ride-sharing app (similar to Uber/Lyft), to identify areas for improvement and optimization. We will use SQL for data collection and Pandas for further analysis and visualisation. The stakeholders have asked several business questions that can uncover valuable insights for improving specific areas of the customer funnel. Your task is to conduct a funnel analysis and present your analysis and recommendation. Explain your reason for your recommendation based on insights retrieved from the data. 
 
 🚗 About Metrocar
