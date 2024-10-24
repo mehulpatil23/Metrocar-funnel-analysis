@@ -1,31 +1,44 @@
-Metrocar-funnel-analysis:
-This project aims to analyze the customer funnel of Metrocar, a ride-sharing app (similar to Uber/Lyft), to identify areas for improvement and optimization. We will use SQL for data collection and Pandas for further analysis and visualisation. The stakeholders have asked several business questions that can uncover valuable insights for improving specific areas of the customer funnel. Your task is to conduct a funnel analysis and present your analysis and recommendation. Explain your reason for your recommendation based on insights retrieved from the data. 
+Metrocar Funnel Analysis
 
-🚗 About Metrocar:
-Metrocar's business model is based on a platform that connects riders with drivers through a mobile application. Metrocar acts as an intermediary between riders and drivers, providing a user-friendly platform to connect them and facilitate the ride-hailing process.
+Overview
 
-📶 Metrocar’s Funnel:
-The customer funnel for Metrocar typically includes the following stages:
-App Download: A user downloads the Metrocar app from the App Store or Google Play Store.
-Signup: The user creates an account in the Metrocar app, including their name, email, phone number, and payment information.
-Request Ride: The user opens the app and requests a ride by entering their pickup location, destination, and ride capacity (2 to 6 riders).
-Driver Acceptance: A nearby driver receives the ride request and accepts the ride.
-Ride: The driver arrives at the pickup location, and the user gets in the car and rides to their destination.
-Payment: After the ride, the user is charged automatically through the app, and a receipt is sent to their email.
-Review: The user is prompted to rate their driver and leave a review of their ride experience.
-Similar to other customer funnels, there will be drop-offs at every stage of the funnel, which is why funnel analysis can be helpful in identifying areas for improvement and optimization. For example, Metrocar may analyze the percentage of users who download the app but do not complete the registration process, or the percentage of users who request a ride but cancel before the driver arrives.
- 
-🔎 Business questions:
-You will need to analyze the data and make recommendations based on the following business questions:
-What steps of the funnel should we research and improve? Are there any specific drop-off points preventing users from completing their first ride?
-Metrocar currently supports 3 different platforms: ios, android, and web. To recommend where to focus our marketing budget for the upcoming year, what insights can we make based on the platform?
-What age groups perform best at each stage of our funnel? Which age group(s) likely contain our target customers?
-Surge pricing is the practice of increasing the price of goods or services when there is the greatest demand for them. If we want to adopt a price-surging strategy, what does the distribution of ride requests look like throughout the day?
-What part of our funnel has the lowest conversion rate? What can we do to improve this part of the funnel?
+This project aims to analyze the customer funnel of Metrocar, a ride-sharing app (similar to Uber/Lyft), to identify areas for improvement and optimization within the user journey. Using SQL for data collection and Pandas for data analysis and visualization, we will explore the key stages of the customer funnel to uncover insights that will drive better business decisions. The primary goal is to address stakeholder questions, providing actionable recommendations based on the analysis.
 
-🧑‍💻 The Dataset:
-This dataset is inspired by publicly available datasets for Uber/Lyft. The data for this dataset was generated specifically for this project.
-Connect to the Metrocar database
+🚗 About Metrocar
 
-Copy the following URL to use with sqlalchemy and Pandas:
-postgresql://Test:bQNxVzJL4g6u@ep-noisy-flower-846766-pooler.us-east-2.aws.neon.tech/Metrocar
+Metrocar operates as a platform that connects riders with drivers through a mobile application. Acting as an intermediary, Metrocar facilitates the ride-hailing process by offering a seamless, user-friendly interface for both riders and drivers.
+
+Key Features:
+
+	•	User-friendly mobile app: Metrocar enables users to request a ride by entering their location and destination.
+	•	Driver network: Drivers accept ride requests and transport users to their destinations.
+	•	Automatic payment: Users are charged automatically after the ride through the app.
+
+📶 Metrocar’s Funnel
+
+The customer funnel consists of several stages, each of which presents potential points of user drop-off. Analyzing these stages allows Metrocar to identify areas for improvement, optimize the user journey, and reduce churn. The main stages include:
+
+	1.	App Download: A user downloads the Metrocar app from the App Store or Google Play Store.
+	2.	Signup: The user creates an account, providing essential information (e.g., name, email, payment info).
+	3.	Request Ride: The user opens the app, enters their pickup and destination, and requests a ride.
+	4.	Driver Acceptance: A nearby driver receives the request and accepts it.
+	5.	Ride: The driver picks up the user, who rides to their destination.
+	6.	Payment: The fare is automatically charged, and a receipt is sent via email.
+	7.	Review: The user rates the driver and may leave feedback on their ride experience.
+
+Like any customer funnel, each stage can experience drop-offs, which can hinder the user from completing the entire process. For example, users may download the app but not complete the signup, or they may cancel rides before the driver arrives. Identifying these issues through funnel analysis can help us target key areas for improvement.
+
+🔎 Business Questions
+
+To provide insights and recommendations, the following business questions need to be addressed:
+
+	1.	Funnel Optimization: Which stages of the funnel experience the highest drop-offs, and how can they be improved?
+	2.	User Drop-off: Are there specific points where users fail to complete their first ride? What are the causes?
+	3.	Platform Insights: Metrocar supports iOS, Android, and web. Based on platform performance, where should Metrocar allocate its marketing budget for the upcoming year?
+	4.	Age Group Performance: How do different age groups perform at each funnel stage? Which age group(s) should Metrocar target as their primary customer base?
+	5.	Surge Pricing Analysis: If Metrocar adopts surge pricing, how does ride request volume vary throughout the day, and when would surge pricing be most effective?
+	6.	Conversion Rates: Which stage of the funnel has the lowest conversion rate, and what can be done to improve it?
+
+🧑‍💻 The Dataset: This dataset is inspired by publicly available datasets for Uber/Lyft. The data for this dataset was generated specifically for this project. Connect to the Metrocar database
+
+Copy the following URL to use with sqlalchemy and Pandas: postgresql://Test:bQNxVzJL4g6u@ep-noisy-flower-846766-pooler.us-east-2.aws.neon.tech/Metrocar
